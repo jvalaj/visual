@@ -5,55 +5,39 @@ const Vision: React.FC = () => {
     <section id="vision" className="py-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center max-w-4xl mx-auto">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
-            our vision
-          </span>
+          <p>
+            vi$ual's
+            <span className="underline ml-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
+              vision
+            </span>
+          </p>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Left Column — Vision for Artists */}
           <div className="space-y-6">
-            <VisionItem>
-              Artists Deserve More Than Likes. Brands Deserve More Than Stock
-              Templates.
-            </VisionItem>
-
-            <VisionItem>
-              Most Artists Don’t Even Know They’re Sitting On Brand Gold. They
-              Create For The Feed — Not Realizing Their Work Could Be Campaign
-              Material.
-            </VisionItem>
-
+            <span className=" text-[#FF0000]">for Artists</span>
+            <VisionItem>Artists Deserve More Than Likes.</VisionItem>
             <VisionItem>
               Artists Are Building Visual Culture, One Post At A Time — And
               Getting Paid Like It’s A Side Hustle.
             </VisionItem>
-
             <VisionItem>
               Instagram Gave Artists An Audience — But No Infrastructure. Likes
               Don’t Pay Rent. Exposure Doesn’t Close Deals.
             </VisionItem>
-
             <VisionItem>
               The Internet Gave Artists Freedom — But No System. We’re Building
               That System.
             </VisionItem>
           </div>
-
           {/* Right Column — Vision for Brands */}
-          <div className="space-y-6 mt-10 md:mt-0">
-            <VisionItem>The Art Economy Is Broken.</VisionItem>
-
+          <div className="text-right space-y-6 mt-10 md:mt-0">
+            <p className="bg-clip-text ml-auto text-transparent text-end bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
+              for Brands
+            </p>
+            <VisionItem>Brands Deserve More Than Stock Templates.</VisionItem>
             <VisionItem>Find Artists Who Feel Like Your Brand.</VisionItem>
-
-            <VisionItem>
-              There Are Millions Of Artists Creating Every Day — But Almost No
-              Infrastructure To Connect Them To Real Opportunities.
-            </VisionItem>
-
-            <VisionItem>
-              This Is How The Next Wave Of Brands Will Work With Artists.
-            </VisionItem>
 
             <VisionItem>
               Most Commission Work Still Starts With A Cold DM And Ends With A

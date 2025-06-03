@@ -42,7 +42,7 @@ const Header: React.FC = () => {
               href="#signup"
               className="border border-white px-6 py-2 hover:bg-white hover:text-black transition-all"
             >
-              sign up
+              join waitlist
             </NavLink>
           </div>
 
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(false)}
             className="border border-white px-8 py-3"
           >
-            sign up
+            join waitlist
           </MobileNavLink>
         </div>
       </div>
