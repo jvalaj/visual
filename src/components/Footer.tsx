@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
             <div className="text-white font-bold text-xl tracking-widest mb-4">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-purple-500 to-green-500">
                 vi$ual
               </span>
             </div>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             </div>
 
             <p className="text-white/40 text-sm">
-              © {new Date().getFullYear()} ARTCONOMY. All rights reserved.
+              © {new Date().getFullYear()} vi$ual. All rights reserved.
             </p>
           </div>
         </div>

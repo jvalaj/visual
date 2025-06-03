@@ -21,13 +21,6 @@ const Hero: React.FC = () => {
   }, []);
   return (
     <section className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden">
-      {/* Background gradient effects 
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 opacity-40 bg-gradient-to-br from-red-500/40 via-green-500/20 to-blue-500/20 blur-3xl " />
-        <div className="absolute inset-0 opacity-30 bg-gradient-to-tl from-cyan-500/45 via-yellow-500/15 to-magenta-500/15 blur-2xl " />
-        <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-orange-500/20 via-purple-500/10 to-emerald-500/10 blur-xl transition-all duration-900" />
-      </div>
-*/}
       <div className="absolute inset-0">
         <img
           src="/bg-drop.png"
@@ -46,8 +39,11 @@ const Hero: React.FC = () => {
           </p>
 
           <h1 className="text-white text-4xl md:text-7xl font-light tracking-tight mb-8">
-            join <u>vi$ual</u> today - get hired by brands.
+            join <u>vi$ual</u> today.
           </h1>
+          <h3 className=" text-xl">
+            Get hired by Brands - Start making $$$ for your Art
+          </h3>
 
           <p className="text-white/60 text-lg md:text-xl font-light max-w-2xl mb-16"></p>
 

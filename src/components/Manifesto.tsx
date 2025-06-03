@@ -1,5 +1,7 @@
 import React from "react";
 import { Palette, DollarSign, Users } from "lucide-react";
+import { Search, Briefcase, Zap } from "lucide-react";
+
 const Vision: React.FC = () => {
   return (
     <section id="vision" className="py-24 bg-black">
@@ -20,11 +22,10 @@ const Vision: React.FC = () => {
             <div className="md:[70%] flex flex-col">
               <div className="space-y-4">
                 <FeatureItem
-                  icon={<Palette size={32} />}
-                  title="keep creating"
-                  description="Create just like you always have. We match you with brands specifically looking for YOUR unique aesthetic."
+                  icon={<Users size={32} />}
+                  title="actually get recurring deals"
+                  description="Move beyond one-off gigs. Our platform helps you build ongoing relationships with brands that love your work."
                 />
-
                 <FeatureItem
                   icon={<DollarSign size={32} />}
                   title="decide your rates"
@@ -32,33 +33,39 @@ const Vision: React.FC = () => {
                 />
 
                 <FeatureItem
-                  icon={<Users size={32} />}
-                  title="actually get recurring deals"
-                  description="Move beyond one-off gigs. Our platform helps you build ongoing relationships with brands that love your work."
+                  icon={<Palette size={32} />}
+                  title="keep creating"
+                  description="Create just like you always have. We match you with brands specifically looking for YOUR unique aesthetic."
                 />
               </div>
             </div>
-            <VisionItem>
-              Instagram Gave Artists An Audience — But No Infrastructure. Likes
-              Don’t Pay Rent. Exposure Doesn’t Close Deals.
-            </VisionItem>
-            <VisionItem>
-              Most Commission Work Still Starts With A Cold DM And Ends With A
-              PayPal Link. That’s Not A Creative Economy — That’s A MESS.
-            </VisionItem>
           </div>
           {/* Right Column — Vision for Brands */}
-          <div className="text-right space-y-6 mt-10 md:mt-0">
-            <p className="bg-clip-text ml-auto text-transparent text-end bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
+          <div className="text-right  space-y-6 mt-10 md:mt-0">
+            <p className="bg-clip-text ml-auto text-end text-[#00FF00]">
               for Brands
             </p>
-            <VisionItem>
-              Brands Are Spending Millions On Ads Made By People Who Don’t Even
-              Use The Platforms They’re Designing For.
-            </VisionItem>
-            <VisionItem>
-              Describe what you're looking for, find it with our AI.
-            </VisionItem>
+            <div className="ml-auto md:w-[100%]">
+              <div className="space-y-4">
+                <FeatureItem
+                  icon={<Search className="ml-auto" size={32} />}
+                  title="chatgpt what you're looking for"
+                  description="Search by style, medium, or audience to find artists with our AI that align with your brand aesthetic and audience."
+                />
+
+                <FeatureItem
+                  icon={<Briefcase className="ml-auto" size={32} />}
+                  title="streamlined payments"
+                  description="Clear pricing, straightforward contracts, and secure payments. No more back-and-forth over email or chasing invoices."
+                />
+
+                <FeatureItem
+                  icon={<Zap className="ml-auto" size={32} />}
+                  title="authentic art that converts"
+                  description="Work with artists who understand digital culture and can create content that actually resonates with your target audience."
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
