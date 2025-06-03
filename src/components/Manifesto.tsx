@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Palette, DollarSign, Users } from "lucide-react";
 const Vision: React.FC = () => {
   return (
     <section id="vision" className="py-24 bg-black">
@@ -17,18 +17,34 @@ const Vision: React.FC = () => {
           {/* Left Column — Vision for Artists */}
           <div className="space-y-6">
             <span className=" text-[#FF0000]">for Artists</span>
-            <VisionItem>Artists Deserve More Than Likes.</VisionItem>
-            <VisionItem>
-              Artists Are Building Visual Culture, One Post At A Time — And
-              Getting Paid Like It’s A Side Hustle.
-            </VisionItem>
+            <div className="md:[70%] flex flex-col">
+              <div className="space-y-4">
+                <FeatureItem
+                  icon={<Palette size={32} />}
+                  title="keep creating"
+                  description="Create just like you always have. We match you with brands specifically looking for YOUR unique aesthetic."
+                />
+
+                <FeatureItem
+                  icon={<DollarSign size={32} />}
+                  title="decide your rates"
+                  description="No race to the bottom. Set prices that reflect your value and connect with brands willing to pay for quality and authenticity."
+                />
+
+                <FeatureItem
+                  icon={<Users size={32} />}
+                  title="actually get recurring deals"
+                  description="Move beyond one-off gigs. Our platform helps you build ongoing relationships with brands that love your work."
+                />
+              </div>
+            </div>
             <VisionItem>
               Instagram Gave Artists An Audience — But No Infrastructure. Likes
               Don’t Pay Rent. Exposure Doesn’t Close Deals.
             </VisionItem>
             <VisionItem>
-              The Internet Gave Artists Freedom — But No System. We’re Building
-              That System.
+              Most Commission Work Still Starts With A Cold DM And Ends With A
+              PayPal Link. That’s Not A Creative Economy — That’s A MESS.
             </VisionItem>
           </div>
           {/* Right Column — Vision for Brands */}
@@ -36,22 +52,40 @@ const Vision: React.FC = () => {
             <p className="bg-clip-text ml-auto text-transparent text-end bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
               for Brands
             </p>
-            <VisionItem>Brands Deserve More Than Stock Templates.</VisionItem>
-            <VisionItem>Find Artists Who Feel Like Your Brand.</VisionItem>
-
-            <VisionItem>
-              Most Commission Work Still Starts With A Cold DM And Ends With A
-              PayPal Link. That’s Not A Creative Economy — That’s A MESS.
-            </VisionItem>
-
             <VisionItem>
               Brands Are Spending Millions On Ads Made By People Who Don’t Even
               Use The Platforms They’re Designing For.
+            </VisionItem>
+            <VisionItem>
+              Describe what you're looking for, find it with our AI.
             </VisionItem>
           </div>
         </div>
       </div>
     </section>
+  );
+};
+
+interface FeatureItemProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const FeatureItem: React.FC<FeatureItemProps> = ({
+  icon,
+  title,
+  description,
+}) => {
+  return (
+    <div className="">
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 blur group-hover:blur-xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+      <div className="relative border border-white/10 p-8 hover:border-white/30 transition-all duration-300">
+        <div className="text-cyan-400 mb-4">{icon}</div>
+        <h3 className="text-white text-xl font-bold mb-4">{title}</h3>
+        <p className="text-white/70 leading-relaxed">{description}</p>
+      </div>
+    </div>
   );
 };
 
