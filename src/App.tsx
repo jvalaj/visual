@@ -43,7 +43,6 @@ function App() {
       <Hero />
       <Vision />
       <ForArtists />
-      <ForBrands />
       <SignupForm />
       <Footer />
     </div>

@@ -58,7 +58,7 @@ const Vision: React.FC = () => {
               <FeatureItem
                 icon={<Search className="ml-auto text-[#00FF00]" size={32} />}
                 title="chatgpt what you're looking for"
-                description="Search by style, medium, or audience to find artists with our AI that align with your brand aesthetic and audience."
+                description="Search in raw terms to find art using AI that aligns with your brand aesthetic and audience."
               />
               <FeatureItem
                 icon={
