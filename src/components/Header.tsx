@@ -50,36 +50,18 @@ const Header: React.FC = () => {
             className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            <MobileNavLink
+              href="#signup"
+              onClick={() => setIsMenuOpen(false)}
+              className="border border-white px-8 py-3"
+            >
+              join waitlist
+            </MobileNavLink>
           </button>
         </div>
       </div>
 
       {/* Mobile menu */}
-      <div
-        className={`fixed inset-0 bg-black z-40 transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
-      >
-        <div className="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
-          <MobileNavLink href="#vision" onClick={() => setIsMenuOpen(false)}>
-            our vision
-          </MobileNavLink>
-          <MobileNavLink href="#artists" onClick={() => setIsMenuOpen(false)}>
-            for artists
-          </MobileNavLink>
-          <MobileNavLink href="#brands" onClick={() => setIsMenuOpen(false)}>
-            for brands
-          </MobileNavLink>
-          <MobileNavLink
-            href="#signup"
-            onClick={() => setIsMenuOpen(false)}
-            className="border border-white px-8 py-3"
-          >
-            join waitlist
-          </MobileNavLink>
-        </div>
-      </div>
     </header>
   );
 };
