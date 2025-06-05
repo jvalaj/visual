@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
   return (
-    <section className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden">
+    <section className="relative md:min-h-screen bg-black flex pt-36 mb-24 md:items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="/bg-drop.png"
@@ -38,10 +38,10 @@ const Hero: React.FC = () => {
             material."
           </p>
 
-          <h1 className="text-white text-4xl md:text-7xl font-light tracking-tight mb-8">
+          <h1 className="text-white text-6xl md:text-7xl font-light tracking-tight mb-8">
             join <u>vi$ual</u> today.
           </h1>
-          <h3 className=" text-xl">
+          <h3 className="text-lg md:text-xl">
             Get hired by Brands - Start making $$$ for your Art
           </h3>
 

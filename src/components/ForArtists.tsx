@@ -49,38 +49,31 @@ const ForArtists: React.FC = () => {
       </div>
 
       <div className="mt-0 pt-0 container mx-auto px-6 md:px-12 relative z-10">
-        <div className="mb-32 text-xl md:border border border-full border-white/60 md:text-2xl p-4 mx-auto w-2/3 text-center text-white/60">
-          "Art commissions still start with a
-          <span className="text-white">&nbsp; cold DM</span> and end with a
-          <span className="text-white">&nbsp; PayPal link</span>. That’s not a
-          creative economy — <u className="text-white">that’s a mess.</u> "
+        <div className="mb-20 md:mb-32 text-2xl md:border border border-full border-white/60 md:text-2xl p-4 mx-auto md:w-2/3 text-center text-white/60">
+          Your next project shouldn't start with a DM. It should start with a
+          &nbsp;
+          <span className="text-white underline">contract</span>.
         </div>
 
-        <div className="flex flex-col items-center justify-center ">
-          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-12 text-center max-w-4xl mx-auto">
-            <p>features</p>
+        <div className="flex flex-col md:items-center justify-center ">
+          <h2 className="text-white text-4xl md:text-5xl font-bold tracking-tight md:mb-12 mx-auto">
+            <p className="">features</p>
           </h2>
           <div className="p-4 px-auto ">
             <div className="flex flex-col justify-center lg:flex-row gap-8 max-w-5xl mx-auto">
-              <FeatureItem title="AI-Powered Discovery">
-                Search art like you speak —{" "}
+              <FeatureItem title="AI-Powered Search">
+                Brands search art like they speak —{" "}
                 <em>“bold type, sci-fi colors, clean layout”</em>. Instantly
                 find work that fits.
-              </FeatureItem>
-
-              <FeatureItem title="Creator Profiles That Sell Themselves">
-                No PDFs, no pitch decks. Just scrollable, shoppable portfolios
-                designed to convert.
-              </FeatureItem>
-
-              <FeatureItem title="Your Style, Your Rate">
-                Set your own pricing and availability. You control how, when,
-                and what you work on.
               </FeatureItem>
 
               <FeatureItem title="Built-In Contracts & Invoicing">
                 Every project includes built-in agreements and secure payments —
                 so you can focus on creating.
+              </FeatureItem>
+              <FeatureItem title="Your Style, Your Rate">
+                Set your own pricing and availability. You control how, when,
+                and what you work on.
               </FeatureItem>
             </div>
           </div>

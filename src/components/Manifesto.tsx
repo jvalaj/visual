@@ -7,18 +7,19 @@ const Vision: React.FC = () => {
     <section id="vision" className="pt-0 md:pt-8 pb-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <div className="relative p-6 border border-white/10 rounded-3xl bg-white/5 backdrop-blur-md hover:border-white/20 transition-all duration-300 text-white text-center mx-auto w-full px-4 mb-12">
-          <p className="text-[2rem] sm:text-[3rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-extrabold tracking-tight leading-[1.05] ">
-            The Future Of Branding Is Being Created On Feeds Right Now.{" "}
+          <p className="text-left md:text-center text-[3.5rem] lg:text-[4rem] xl:text-[4rem] font-extrabold tracking-tight leading-[1.05] ">
+            You're not just "posting content" — you're designing ads without
+            getting paid.{" "}
           </p>
-          <p className="mt-4 text-white/70 text-base sm:text-xl tracking-tight">
+          <p className="mt-4 text-left md:text-center text-white/70  text-xl tracking-tight">
             Your audience loves it. Now let brands <u>invest</u> in it.
           </p>
         </div>
         <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mt-32 mb-6 text-center max-w-4xl mx-auto">
           <p>
             our
-            <span className=" ml-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
-              vision
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
+              &nbsp; vision
             </span>
           </p>
         </h2>
