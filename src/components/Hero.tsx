@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
   return (
-    <section className="relative md:min-h-screen bg-black flex pt-36 mb-24 md:items-center justify-center overflow-hidden">
+    <section className="relative md:min-h-screen bg-black flex pt-36 md:pt-0 mb-24 md:mb-0 md:items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="/bg-drop.png"
