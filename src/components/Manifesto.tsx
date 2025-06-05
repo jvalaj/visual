@@ -4,18 +4,20 @@ import { Search, Briefcase, Zap } from "lucide-react";
 
 const Vision: React.FC = () => {
   return (
-    <section id="vision" className="pt-8 pb-24 bg-black">
-      <div className="mb-32 text-xl md:border border border-full border-white/60 md:text-2xl p-4 mx-auto w-2/3 text-center text-white/60">
-        "Art commissions still start with a
-        <span className="text-white">&nbsp; cold DM</span> and end with a
-        <span className="text-white">&nbsp; PayPal link</span>. That’s not a
-        creative economy — <u className="text-white">that’s a mess.</u> "
-      </div>
+    <section id="vision" className="pt-0 md:pt-8 pb-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-        <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center max-w-4xl mx-auto">
+        <div className="relative p-6 border border-white/10 rounded-3xl bg-white/5 backdrop-blur-md hover:border-white/20 transition-all duration-300 text-white text-center mx-auto w-full px-4 mb-12">
+          <p className="text-[2rem] sm:text-[3rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-extrabold tracking-tight leading-[1.05] ">
+            The Future Of Branding Is Being Created On Feeds Right Now.{" "}
+          </p>
+          <p className="mt-4 text-white/70 text-base sm:text-xl tracking-tight">
+            Your audience loves it. Now let brands <u>invest</u> in it.
+          </p>
+        </div>
+        <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mt-32 mb-6 text-center max-w-4xl mx-auto">
           <p>
             our
-            <span className="underline ml-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
+            <span className=" ml-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#00FF00]">
               vision
             </span>
           </p>
@@ -33,8 +35,8 @@ const Vision: React.FC = () => {
               />
               <FeatureItem
                 icon={<DollarSign className="text-[#FF0000]" size={32} />}
-                title="decide your rates"
-                description="No race to the bottom. Set prices and connect with brands willing to pay for quality and authenticity."
+                title="no more 'open for commissions'"
+                description="Stop waiting for DMs. Vi$ual turns your portfolio into a storefront — so brands come to you, not the other way around."
               />
 
               <FeatureItem
@@ -58,7 +60,7 @@ const Vision: React.FC = () => {
               <FeatureItem
                 icon={<Search className="ml-auto text-[#00FF00]" size={32} />}
                 title="chatgpt what you're looking for"
-                description="Search in raw terms to find art using AI that aligns with your brand aesthetic and audience."
+                description="Search in raw terms to find art using our AI that aligns with your brand aesthetic and audience."
               />
               <FeatureItem
                 icon={

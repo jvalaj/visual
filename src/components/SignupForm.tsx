@@ -57,10 +57,7 @@ const SignupForm: React.FC = () => {
   };
 
   return (
-    <section
-      id="signup"
-      className="py-24 bg-gradient-to-b from-gray-900 to-black"
-    >
+    <section id="signup" className="py-24 bg-black">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-white text-3xl md:text-5xl font-bold tracking-tight mb-8 text-center">

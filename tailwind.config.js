@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sans: ['Outfit', 'sans-serif'],
       },
+
     },
   },
   plugins: [],
